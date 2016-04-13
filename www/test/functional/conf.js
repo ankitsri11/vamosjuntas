@@ -1,11 +1,11 @@
 exports.config = {
   directConnect : true,
   framework: 'jasmine2',
-  specs: ['report.spec.js'],
-  baseUrl: 'http://localhost:8100'
+  specs: ['report.spec.js']
 };
 if (process.env.SNAP_CI) {
     exports.config.directConnect = true;
     exports.config.chromeDriver = '/usr/local/bin/chromedriver';
 }
+baseUrl: 'http://localhost:8100',
 seleniumServerJar: './node_modules/protractor/selenium/selenium-server-standalone-2.52.0.jar'
