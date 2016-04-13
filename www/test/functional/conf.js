@@ -2,6 +2,7 @@ exports.config = {
   directConnect : true,
   framework: 'jasmine2',
   specs: ['report.spec.js'],
+  baseUrl: 'http://localhost:8100'
 };
 if (process.env.SNAP_CI) {
     exports.config.directConnect = true;
